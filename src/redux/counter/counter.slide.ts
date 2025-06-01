@@ -1,13 +1,12 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-export interface CounterState {
-  value: number;
-  name?: string;
-}
-
-const initialState: CounterState = {
+const initialState = {
   value: 0,
   name: "sosnu",
+  info: {
+    age: 18,
+    address: "ha loi",
+  },
 };
 
 export const counterSlice = createSlice({
