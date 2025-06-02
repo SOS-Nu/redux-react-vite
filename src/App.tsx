@@ -1,14 +1,14 @@
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
-import { RootState } from "./redux/store";
-import { useSelector, useDispatch } from "react-redux";
 import { decrement, increment } from "./redux/counter/counter.slide";
+import { useAppDispatch, useAppSelector } from "./redux/hooks";
 
 function App() {
-  const count = useSelector((state: RootState) => state.counter);
+  // const count = useSelector((state: RootState) => state.counter);
+  const count = useAppSelector((state) => state.counter);
   console.log("count", count);
-  const dispatch = useDispatch();
+  const dispatch = useAppDispatch();
   return (
     <>
       <div>
