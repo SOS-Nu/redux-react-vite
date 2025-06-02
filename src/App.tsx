@@ -3,6 +3,9 @@ import viteLogo from "/vite.svg";
 import { decrement, increment } from "./redux/counter/counter.slide";
 import { useAppDispatch, useAppSelector } from "./redux/hooks";
 import Button from "react-bootstrap/Button";
+import Header from "./component/header";
+import TabsContent from "./component/tabs.content";
+import UsersTable from "./component/users.table";
 
 function App() {
   // const count = useSelector((state: RootState) => state.counter);
@@ -11,7 +14,7 @@ function App() {
   const dispatch = useAppDispatch();
   return (
     <>
-      <div>
+      {/* <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
@@ -36,7 +39,10 @@ function App() {
             increase -1
           </button>
         </div>
-      </div>
+      </div> */}
+
+      <Header />
+      <TabsContent />
     </>
   );
 }
