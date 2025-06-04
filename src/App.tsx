@@ -1,17 +1,7 @@
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import { decrement, increment } from "./redux/counter/counter.slide";
-import { useAppDispatch, useAppSelector } from "./redux/hooks";
-import Button from "react-bootstrap/Button";
 import Header from "./component/header";
 import TabsContent from "./component/tabs.content";
-import UsersTable from "./component/users.table";
 
 function App() {
-  // const count = useSelector((state: RootState) => state.counter);
-  const count = useAppSelector((state) => state.counter);
-  console.log("count", count);
-  const dispatch = useAppDispatch();
   return (
     <>
       {/* <div>
