@@ -2,8 +2,10 @@ import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
 import Container from "react-bootstrap/Container";
 import UsersTable from "./users.table";
+import { useAppSelector } from "../redux/hooks";
 
 function TabsContent() {
+  const totalListUsers = useAppSelector((state) => state.user.listUser.length);
   return (
     <Container>
       <Tabs
