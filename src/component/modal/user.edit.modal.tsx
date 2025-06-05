@@ -27,7 +27,7 @@ const UserEditModal = (props: any) => {
       dispatch(resetEdit());
       setIsOpenUpdateModal(false);
     }
-  });
+  }, [isEditSuccess]);
 
   useEffect(() => {
     if (dataUser?.id) {
