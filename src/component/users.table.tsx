@@ -23,7 +23,6 @@ function UsersTable() {
   useEffect(() => {
     dispatch(fetchListUsers());
     // toast.success("fetch success")
-    toast("🦄 Wow so easy!");
   }, []);
 
   const handleEditUser = (user: any) => {
